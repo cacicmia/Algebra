@@ -1,0 +1,84 @@
+/*
+Theme name: Poliglot
+Author: Mia
+Description: Tema izrađena kao seminarski rad za POU Algebra
+Version: 1.0
+*/
+
+
+/* font-family: 'PT Sans', sans-serif;
+font-family: 'Righteous', cursive; */
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body {
+    background-color: #022;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* navigation **************************/
+#menu, #pageFooter {
+    background-color: #066;
+    color: #ffc;
+    width: 100%;
+    
+}
+
+#menu {
+    height: 60px;
+    padding: 1em 0;
+}
+#menuOptions {
+    width: 65%;
+  
+}
+#menuOptions li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 1.5em;
+}
+#menuOptions a {
+    text-decoration: none;
+    color: #ffc;
+    font-size: 20px;
+}
+#searchForm {
+    width: 33%;
+}
+#sr {
+    vertical-align: middle;
+    width: 275px;
+}
+#searchIcon {
+    width: 30px;
+    vertical-align: middle;
+}
+/* header ****************/
+#pageHeader {
+    height: 240px;
+    background:url(img/domenico-gentile-383050-unsplash.jpg) no-repeat center center/cover;
+}
+.headerTitle {
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 50px;
+    font-family: 'Righteous', cursive;
+    
+ 
+}
+#pageHeader h1{
+    font-size: 68px;
+}
+#pageHeader p {
+    font-size:30px;
+}
