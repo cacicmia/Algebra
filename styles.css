@@ -17,6 +17,8 @@ font-family: 'Righteous', cursive; */
 }
 body {
     background-color: #022;
+    position: relative;        
+     
 }
 .content {
     display: flex;
@@ -24,6 +26,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 
+
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
 }
 
 /* navigation **************************/
@@ -39,17 +48,17 @@ body {
     padding: 1em 0;
 }
 #menuOptions {
-    width: 65%;
+    width: 74%;
   
 }
 #menuOptions li {
     display: inline;
-    list-style-type: none;
+  
     
 }
 
 #menuOptions a {
-    text-decoration: none;
+   
     color: #ffc;
     font-size: 20px;
     padding: 1em;
@@ -66,11 +75,13 @@ body {
     background-color: #fd9;
 }
 #searchForm {
-    width: 33%;
+    width: 25%;
+    align-self: right;
+  
 }
 #sr {
     vertical-align: middle;
-    width: 275px;
+    width: 80%;
 }
 #searchIcon {
     width: 30px;
@@ -81,6 +92,7 @@ body {
 #pageHeader {
     height: 240px;
     background:url(img/domenico-gentile-383050-unsplash.jpg) no-repeat center center/cover;
+    color: #ffc;
 }
 .headerTitle {
     max-width:1200px;
@@ -142,18 +154,119 @@ body {
     display:block-inline;
     color: #ffc;
     font-weight:bold;
-    text-decoration:none;
+   
 }
 /* aside *******/
 #sidebar{
     width: 25%;
+    background-color: #ffc;
+    color: #066;
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+    
+}
+#sidebar h2 {
+    text-align: center;
+    padding: 2px;
+
 }
 #teamDiv {
     width: 260px;
-    height: 260px;
+    
     text-indent: -40px;
     overflow:hidden;
+    margin: 0 auto;
 }
 #teamImg {
     max-width:initial;
+}
+.links li {
+    
+    display:inline;
+    
+}
+.links a {
+   
+    font-size: 18px;
+    display: block;
+    width:100%;
+    padding: 3px;
+    background-color: #066;
+    color:#ffc;
+    border-left: 1px solid #ffc;
+    border-right: 1px solid #ffc;
+    border-bottom: 1px solid #ffc;
+    text-align: center;
+
+}
+/* Footer *********/
+#pageFooter {
+    background-color: #066;
+    color: #ffc;
+    height:180px;
+    position: static;
+    bottom: 0;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#pageFooter h2{
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    border-bottom: 1px solid #ffc;
+
+}#info{
+    width: 76%;
+    display:flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 110px;
+    
+}
+#info li{
+    width: 300px;
+    padding: 0.5em;
+}
+#info a {
+    color: #ffc;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+
+.ftrInfo {
+    width:26px;
+    vertical-align:middle;
+
+}
+.maps {
+    width:200px;
+    height:95px;
+    border:0;
+    
+}
+#social{
+    display:flex;
+    flex-direction: row;
+    width: 22%;
+    justify-content: flex-end;
+   
+   
+}
+#social img {
+    width:48px;
+    margin-left: 20px;
+    margin-top: 3em;
+    
+}
+#copyright {
+    border-top: 1px solid #ffc;
+    padding: 0.2em;
+    text-align:right;
 }
