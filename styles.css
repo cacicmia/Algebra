@@ -179,7 +179,7 @@ a {
 
 }
 #teamDiv {
-    width: 260px;
+    max-width: 260px;
     
     text-indent: -40px;
     overflow:hidden;
@@ -347,6 +347,13 @@ a {
     height:315px;
 }
 #info {
-    height: 205px;
+    height: 200px;
+}
+#info li{
+ 
+    padding: 1em;
+}
+#social img {
+    margin-top: 8em;
 }
 }
