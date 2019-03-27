@@ -22,7 +22,6 @@ body {
     margin: 0 auto;
     min-height: 100vh;
 
-
 }
 li {
     list-style-type: none;
@@ -304,6 +303,7 @@ a {
     }
     .content {
         flex-flow: column;
+      
        
     }
     #mainContent {
@@ -315,13 +315,23 @@ a {
     }
     .post {
         height: 250px;
-      
+        margin-bottom: 5px;
     }
+    .post h1,
+    .post p {
+    
+    top: 180px;
+    
+}
     #sidebar {
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-flow: row;
+        height:360px;
+        margin: 5px 0;
+        justify-content: center;
+     
     }
 
     .links {
@@ -330,4 +340,13 @@ a {
     .team {
         width: 48%;
     }
+  
+}
+@media screen and (max-width:1050px) {
+#pageFooter {
+    height:315px;
+}
+#info {
+    height: 205px;
+}
 }
