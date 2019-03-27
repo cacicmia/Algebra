@@ -273,6 +273,7 @@ a {
     flex-direction: row;
     width: 22%;
     justify-content: flex-end;
+
    
    
 }
@@ -287,6 +288,22 @@ a {
     padding: 0.2em;
     text-align:right;
 }
+@media screen and (max-width:1050px) {
+    #pageFooter,
+    .container {
+        height:315px;
+    }
+    #info {
+        height: 200px;
+    }
+    #info li{
+        width: 260px;
+        padding: 1em;
+    }
+    #social img {
+        margin-top: 8em;
+    }
+    }
 @media screen and (max-width:767px) {
     .navMenu {
         display:none;
@@ -342,18 +359,58 @@ a {
     }
   
 }
-@media screen and (max-width:1050px) {
-#pageFooter {
-    height:315px;
+
+@media screen and (max-width:540px) {
+    #pageFooter,
+    .container {
+        height:390px;
+    }
+    #info {
+        height: 250px;
+        flex-wrap: nowrap;
+        padding-left: 1em;
+    }
+    #info li{
+        width: 500px;
+        padding: 0.5em;
+    }
+    #social img {
+        margin-top:0;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    #social {
+        width: 100%;
+        position: relative;
+        right: 5px;
+       
+    }
+    .post {
+        width: 45%;
+        
+    }
 }
-#info {
-    height: 200px;
-}
-#info li{
- 
-    padding: 1em;
-}
-#social img {
-    margin-top: 8em;
-}
+@media screen and (max-width:400px){
+    #mainContent {
+        flex-flow: column;
+    }
+    .post {
+        margin: 2px auto;
+        
+        width: 95%;
+        height: 200px; /*?*/
+
+    }
+    .post h1,
+    .post p {
+    
+    top: 130px;
+    
+    }
+    #sidebar {
+        width: 360px;/*?*/
+        flex-flow: column;  
+    
+    }
 }
