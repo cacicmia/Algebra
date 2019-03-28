@@ -341,13 +341,12 @@ a {
     
 }
     #sidebar {
-        width: 100%;
-        margin: 0 auto;
+        width: 98%;
         display: flex;
         flex-flow: row;
-        height:360px;
-        margin: 5px 0;
+        margin: 5px auto;
         justify-content: center;
+       
      
     }
 
@@ -392,6 +391,16 @@ a {
     }
 }
 @media screen and (max-width:400px){
+    #pageHeader {
+        height: 210px;
+    }
+    #pageHeader p {
+        font-size: 26px;
+    }
+    .headerTitle{
+        padding:50px 1em ;
+    }
+  
     #mainContent {
         flex-flow: column;
     }
@@ -399,18 +408,23 @@ a {
         margin: 2px auto;
         
         width: 95%;
-        height: 200px; /*?*/
+        height: 210px;
 
     }
     .post h1,
     .post p {
     
-    top: 130px;
+    top: 140px;
     
     }
     #sidebar {
-        width: 360px;/*?*/
+       
         flex-flow: column;  
     
+    }
+    .links,
+    .team {
+        width:95%;
+        margin: 5px 10px;
     }
 }
