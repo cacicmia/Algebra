@@ -12,17 +12,20 @@ Version: 1.0
 }
 body {
     background-color: #022;
-    position: relative;        
-     
+    position: relative; 
+    
 }
 .content {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 60vh;
+    align-items: flex-start;
+    
 
 }
+
 li {
     list-style-type: none;
 }
@@ -207,6 +210,17 @@ a {
     text-align: center;
 
 }
+.links a:visited{
+    color: #ddd;
+}
+.links a:hover,
+.links a:focus {
+    color: #022;
+    background-color: #fa0;
+}
+.links a:active {
+    background-color: #fd9;
+}
 /* Footer *********/
 #pageFooter {
     background-color: #066;
@@ -253,9 +267,17 @@ a {
     font-weight: bold;
     display: block;
 }
+#info a:visited {
+    color: #ddd;
+}
 
-
-
+#info a:hover,
+#info a:focus {
+    color:#fa0;
+}
+#info a:active{
+    color: #fd9;
+}
 
 .ftrInfo {
     width:26px;
@@ -291,7 +313,7 @@ a {
 @media screen and (max-width:1050px) {
     #pageFooter,
     .container {
-        height:315px;
+        height:280px;
     }
     #info {
         height: 200px;
@@ -300,11 +322,20 @@ a {
         width: 260px;
         padding: 1em;
     }
+    #social{
+        margin-left: 0;
+        right: 0.5em;
+        position: relative;
+       
+    }
     #social img {
         margin-top: 8em;
     }
     }
 @media screen and (max-width:767px) {
+    #menu{
+        align-content: center;
+    }
     .navMenu {
         display:none;
     }
@@ -370,7 +401,7 @@ a {
         padding-left: 1em;
     }
     #info li{
-        width: 500px;
+        max-width: 500px;
         padding: 0.5em;
     }
     #social img {
@@ -381,9 +412,8 @@ a {
     }
     #social {
         width: 100%;
-        position: relative;
-        right: 5px;
-       
+        
+      
     }
     .post {
         width: 45%;
@@ -405,7 +435,7 @@ a {
         flex-flow: column;
     }
     .post {
-        margin: 2px auto;
+        margin: 5px auto;
         
         width: 95%;
         height: 210px;
