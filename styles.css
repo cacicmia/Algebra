@@ -199,12 +199,15 @@ a {
    
 }
 /* aside *******/
-#sidebar{
+#sidebar {
+    position:relative;
+    margin:0.3em auto;
     width: 25%;
     background-color: #ffc;
     color: #066;
     font-size: 24px;
-    margin: 0 auto 10px;
+    
+   
     
    
    
@@ -384,7 +387,7 @@ a {
         margin-top: 8em;
     }
     }
-@media screen and (max-width:767px) {
+@media screen and (max-width:860px) {
     #menu{
         -ms-flex-line-pack: center;
             align-content: center;
@@ -408,7 +411,7 @@ a {
             -ms-flex-flow: column;
                 flex-flow: column;
       
-       
+   
     }
     #mainContent {
         width: 100%;
@@ -561,3 +564,45 @@ a {
     text-align: justify;
 }
 
+/* proizvodi-usluge ******/
+.content3{
+    display: flex;
+    flex-direction: column
+}
+.product {
+    max-width: 100%;
+    background-color:#ffc;
+    margin: .3em;
+    max-height: 150px;
+    overflow:hidden;
+}
+.product img{
+   height: 130px;
+   
+    margin: 10px;
+    object-fit: scale-down;
+}
+
+
+.product p {
+    display:inline;
+    margin: 1em;
+    vertical-align: center;
+    
+}
+.product h4{
+    text-align: center;
+}
+.content4{
+    display: flex;
+    flex-direction: row;
+}
+#employees {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
