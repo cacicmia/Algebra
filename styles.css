@@ -159,6 +159,15 @@ a {
     opacity: 1;
     background:url(img/andrew-butler-325931-unsplash.jpg) no-repeat center center/cover;
 }
+.german{
+    background:url(img/christian-wiediger-687490-unsplash.jpg) no-repeat center center/cover;
+}
+.spain {
+    background:url(img/3046.jpg) no-repeat center center/cover;
+}
+.italian {
+    background:url(img/591.jpg) no-repeat center center/cover;
+}
 .post:hover,
 .post:focus {
     border: 0.3em solid #fa0;
