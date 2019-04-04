@@ -99,6 +99,11 @@ a {
 #menuIcon {
     display: none;
 }
+.active {
+    font-weight: 900;
+    text-decoration: underline;
+    
+}
 
 /* header ****************/
 #pageHeader {
@@ -524,3 +529,26 @@ a {
         margin: 5px 10px;
     }
 }
+
+/* o nama *****/
+ .onama {
+    background-color: #ffc;
+    margin: 2em;
+    padding: 2em;
+}
+.onama h1, 
+.onama h3 {
+    text-align: center;
+    font-weight: bold;
+
+}
+.employee{
+    padding: 1em;
+}
+.employee h3{
+    text-align: center;
+}
+.employee p {
+    text-align: justify;
+}
+
