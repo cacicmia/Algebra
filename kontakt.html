@@ -46,30 +46,35 @@
 	</header>
 	<div class="content">
 		<main id="mainContent">
-			<article class="post">
-				<h1><a href="#">random</a></h1>
-				<p>even more random</p>
-			</article>
-			<article class="post">
-				<h1><a href="#">random</a></h1>
-				<p>even more random</p>
-			</article>
-			<article class="post">
-				<h1><a href="#">random</a></h1>
-				<p>even more random</p>
-			</article>
-			<article class="post">
-				<h1><a href="#">random</a></h1>
-				<p>even more random</p>
-			</article>
-			<article class="post">
-				<h1><a href="#">random</a></h1>
-				<p>even more random</p>
-			</article>
-			<article class="post">
-				<h1><a href="#">random</a></h1>
-				<p>even more random</p>
-			</article>
+		<form action="POST" name="kontakt" id="kontakt" action="mailto:tututu@tototo.com">
+			<p><label for="name">Ime i prezime:</label>
+				<input type="text" name="name" id="name" required autocomplete="name">
+			</p>
+			<p><label for="address">Adresa:</label>
+				<input type="text" name="address" id="address" required autocomplete="street-address">
+			</p>
+			<p><label for="email">Email:</label>
+				<input type="email" name="email" id="email" required autocomplete="email">
+			
+			</p>
+			<p><label for="tel">Telefon:</label>
+				<input type="text" name="tel" id="tel" required autocomplete="tel">
+			</p>
+			<p>
+				<label for="newsletter">Želim primati obavijesti</label>
+				<input type="checkbox" name="newsletter" id="newsletter" value="true" checked>
+			</p>
+			<p><label for="query">Upit:</label>
+				</p>
+
+				 <textarea name="query" id="query" cols="30" rows="10"></textarea>
+			
+			<p><input class="buttonStyle" type="reset" value="Poništi">
+				<input class="buttonStyle" type="submit" value="Pošalji">
+			 </p>
+
+
+		</form>
 		</main>
 		<aside id="sidebar">
 			<div class="links">

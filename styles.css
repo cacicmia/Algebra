@@ -140,7 +140,7 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 75%;
-    margin: 0 auto;
+    margin: 2em auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -545,7 +545,7 @@ a {
 /* o nama *****/
  .onama {
     background-color: #ffc;
-    margin: 2em;
+    margin:0 2em;
     padding: 2em;
 }
 .onama h1, 
@@ -605,4 +605,39 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+}
+/*Kontakt ****************/
+
+#kontakt {
+    margin: 1em 0.2em, 0.2em;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffc;
+    width: 60%;
+    
+}
+
+#kontakt p {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.2em;
+}
+#kontakt label,
+#kontakt input {
+    margin:0.25em;
+}
+
+.buttonStyle {
+    padding: .25em;
+    font-family: 'PT Sans', sans-serif;
+    color: #ffc;
+    background-color: #022;
+    border: 1px solid #066;
+    border-radius: 5px;
+    margin:.25em
+}
+#kontakt #newsletter {
+   align-self: center; 
 }
