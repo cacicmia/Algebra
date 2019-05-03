@@ -157,7 +157,8 @@ a {
     margin-right: 10px;
     margin-top: 5px;
     opacity: 1;
-    background:url(img/andrew-butler-325931-unsplash.jpg) no-repeat center center/cover;
+    background:url(img/andrew-butler.jpg) no-repeat center center/cover;
+    overflow: hidden;
 }
 .german{
     background:url(img/christian-wiediger-687490-unsplash.jpg) no-repeat center center/cover;
@@ -176,9 +177,11 @@ a {
 .post h1,
 .post p {
     opacity: 1;
-    top: 210px;
+    top: 160px;
     position: relative;
     width:100%;
+    
+    
 }
 .post p{
  
@@ -431,7 +434,7 @@ a {
     .post h1,
     .post p {
     
-    top: 180px;
+    top: 130px;
     
 }
     #sidebar {
@@ -521,7 +524,7 @@ a {
     .post h1,
     .post p {
     
-    top: 140px;
+    top: 90px;
     
     }
     #sidebar {
@@ -573,11 +576,11 @@ a {
     max-width: 100%;
     background-color:#ffc;
     margin: .3em;
-    max-height: 250px;
+   
     overflow:hidden;
 }
 .product img{
-   height: 130px;
+   height: 210px;
    
     margin: 10px;
     object-fit: scale-down;
@@ -650,4 +653,9 @@ a {
 }
 #kontakt #newsletter {
    align-self: center; 
+}
+/* cjenik ******/
+#cjenik {
+   
+    background-color: #ffc;
 }
