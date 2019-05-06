@@ -1,9 +1,4 @@
-/*
-Theme name: Poliglot
-Author: Mia Ćaćić
-Description: Tema izrađena kao seminarski rad za POU Algebra
-Version: 1.0
-*/
+
 * {
     margin:0;
     padding: 0;
@@ -140,7 +135,7 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 75%;
-    margin: 2em auto;
+    margin: 0.3em auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -163,11 +158,14 @@ a {
 .german{
     background:url(img/christian-wiediger-687490-unsplash.jpg) no-repeat center center/cover;
 }
-.spain {
+.spanish {
     background:url(img/3046.jpg) no-repeat center center/cover;
 }
 .italian {
     background:url(img/591.jpg) no-repeat center center/cover;
+}
+.english {
+    background:url(img/chris-lawton-95183-unsplash.jpg) no-repeat center center/cover;
 }
 .post:hover,
 .post:focus {
@@ -333,6 +331,7 @@ a {
 .ftrInfo {
     width:26px;
     vertical-align:middle;
+    padding: 5px;
 
 }
 .maps {
@@ -656,6 +655,21 @@ a {
 }
 /* cjenik ******/
 #cjenik {
-   
+   width: 90%;
     background-color: #ffc;
+   
+}
+#cjenik dt,
+#cjenik dd {
+ border-bottom: 1px dotted #022;
+}
+#cjenik thead tr {
+    border: 1px solid #022; 
+}
+#cjenik td:first-child {
+    width: 90%;
+
+}
+.category {
+    font-weight: bold;
 }
