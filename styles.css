@@ -367,6 +367,139 @@ a {
     padding: 0.2em;
     text-align:right;
 }
+
+/* o nama *****/
+ .onama {
+    background-color: #ffc;
+    margin:0 2em;
+    padding: 2em;
+}
+.onama h1, 
+.onama h3 {
+    text-align: center;
+    font-weight: bold;
+
+}
+.employee{
+    padding: 1em;
+}
+.employee h3{
+    text-align: center;
+}
+.employee p {
+    text-align: justify;
+}
+
+/* proizvodi-usluge ******/
+.content3{
+    display: flex;
+    flex-direction: column;
+}
+.product {
+    max-width: 100%;
+    background-color:#ffc;
+    margin: .3em;
+   
+    overflow:hidden;
+}
+.product img{
+   height: 210px;
+   
+    margin: 10px;
+    object-fit: scale-down;
+}
+.seeMore{
+    position: absolute;
+    display:block;
+    right:5px;
+    bottom:5px;
+}
+
+.product p {
+    height: 80%;
+    overflow:hidden;
+       
+}
+.product h4{
+    text-align: center;
+}
+.product >div {
+    margin-bottom:1em;
+}
+.content4{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+ 
+  
+}
+#employees {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+/*Kontakt ****************/
+
+#kontakt {
+    margin: 1em auto 0.2em;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffc;
+    width: 60%;
+    
+}
+
+#kontakt p {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.2em;
+}
+#kontakt label,
+#kontakt input {
+    margin:0.25em;
+}
+
+.buttonStyle {
+    padding: .25em;
+    font-family: 'PT Sans', sans-serif;
+    color: #ffc;
+    background-color: #022;
+    border: 1px solid #066;
+    border-radius: 5px;
+    margin:.25em
+}
+#kontakt #newsletter {
+   align-self: center; 
+}
+/* cjenik ******/
+#cjenik {
+   width: 90%;
+    background-color: #ffc;
+    margin: 0 auto;
+   
+}
+#cjenik dt,
+#cjenik dd {
+ border-bottom: 1px dotted #022;
+}
+#cjenik thead tr {
+    border: 1px solid #022; 
+}
+#cjenik td:first-child {
+    width: 90%;
+
+}
+.category {
+    font-weight: bold;
+}
+
+/*Media queries ***/
 @media screen and (max-width:1050px) {
     #pageFooter,
     .container {
@@ -459,6 +592,10 @@ a {
     .team {
         width: 48%;
     }
+    #kontakt {
+        width: 90%;
+        
+    }
   
 }
 
@@ -494,6 +631,9 @@ a {
     .post {
         width: 45%;
         
+    }
+    #employees {
+        flex-flow: column;
     }
 }
 @media screen and (max-width:400px){
@@ -542,134 +682,4 @@ a {
         width:95%;
         margin: 5px 10px;
     }
-}
-
-/* o nama *****/
- .onama {
-    background-color: #ffc;
-    margin:0 2em;
-    padding: 2em;
-}
-.onama h1, 
-.onama h3 {
-    text-align: center;
-    font-weight: bold;
-
-}
-.employee{
-    padding: 1em;
-}
-.employee h3{
-    text-align: center;
-}
-.employee p {
-    text-align: justify;
-}
-
-/* proizvodi-usluge ******/
-.content3{
-    display: flex;
-    flex-direction: column;
-}
-.product {
-    max-width: 100%;
-    background-color:#ffc;
-    margin: .3em;
-   
-    overflow:hidden;
-}
-.product img{
-   height: 210px;
-   
-    margin: 10px;
-    object-fit: scale-down;
-}
-.seeMore{
-    position: absolute;
-    display:block;
-    right:5px;
-    bottom:5px;
-}
-
-.product p {
-    height: 80%;
-    overflow:hidden;
-       
-}
-.product h4{
-    text-align: center;
-}
-.product >div {
-    margin-bottom:1em;
-}
-.content4{
-    display: flex;
-    position: relative;
-    flex-direction: row;
- 
-  
-}
-#employees {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-}
-/*Kontakt ****************/
-
-#kontakt {
-    margin: 1em 0.2em, 0.2em;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.2em;
-    background-color: #ffc;
-    width: 60%;
-    
-}
-
-#kontakt p {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0.2em;
-}
-#kontakt label,
-#kontakt input {
-    margin:0.25em;
-}
-
-.buttonStyle {
-    padding: .25em;
-    font-family: 'PT Sans', sans-serif;
-    color: #ffc;
-    background-color: #022;
-    border: 1px solid #066;
-    border-radius: 5px;
-    margin:.25em
-}
-#kontakt #newsletter {
-   align-self: center; 
-}
-/* cjenik ******/
-#cjenik {
-   width: 90%;
-    background-color: #ffc;
-   
-}
-#cjenik dt,
-#cjenik dd {
- border-bottom: 1px dotted #022;
-}
-#cjenik thead tr {
-    border: 1px solid #022; 
-}
-#cjenik td:first-child {
-    width: 90%;
-
-}
-.category {
-    font-weight: bold;
 }
