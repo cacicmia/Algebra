@@ -572,14 +572,21 @@ a {
         display:none;
 
     }
-    #menuOptions {
+    .navMenu {
         position: absolute;
         width: 100%;
+        z-index: 1;
     }
-    #menuOptions a{
+    #menuOptions, 
+    #searchForm
+    {
+        width: 100%;
+    }
+    #menuOptions a,
+    #searchForm {
         display:block;
         background-color: #066;
-       
+        
         padding: 1em;
         text-align: center;
        
