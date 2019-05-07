@@ -2,8 +2,7 @@
 * {
     margin:0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
 body {
@@ -392,13 +391,18 @@ a {
 
 /* proizvodi-usluge ******/
 .content3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .product {
     max-width: 100%;
     background-color:#ffc;
-    margin: .3em;
+    margin: 0.3em;
    
     overflow:hidden;
 }
@@ -406,7 +410,8 @@ a {
    height: 210px;
    
     margin: 10px;
-    object-fit: scale-down;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
 }
 .seeMore{
     position: absolute;
@@ -427,9 +432,14 @@ a {
     margin-bottom:1em;
 }
 .content4{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
  
   
 }
@@ -455,9 +465,16 @@ a {
 }
 
 #kontakt p {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0.2em;
 }
 #kontakt label,
@@ -475,7 +492,9 @@ a {
     margin:.25em
 }
 #kontakt #newsletter {
-   align-self: center; 
+   -ms-flex-item-align: center;
+       -ms-grid-row-align: center;
+       align-self: center; 
 }
 /* cjenik ******/
 #cjenik {
@@ -633,7 +652,10 @@ a {
         
     }
     #employees {
-        flex-flow: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
     }
 }
 @media screen and (max-width:400px){
