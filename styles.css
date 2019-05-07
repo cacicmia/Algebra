@@ -2,7 +2,8 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
 body {
@@ -10,6 +11,7 @@ body {
     position: relative; 
     
 }
+
 .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141,6 +143,7 @@ a {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+        
    
 
 }
@@ -372,19 +375,30 @@ a {
     background-color: #ffc;
     margin:0 2em;
     padding: 2em;
+    width: 90%;
 }
 .onama h1, 
 .onama h3 {
     text-align: center;
-    font-weight: bold;
-
+    
+}
+#employees {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+          -webkit-box-pack: space-evenly;
+       -ms-flex-pack: space-evenly;
+           justify-content: space-evenly;
 }
 .employee{
     padding: 1em;
+    max-width: 30%;
 }
-.employee h3{
-    text-align: center;
-}
+
 .employee p {
     text-align: justify;
 }
@@ -398,9 +412,10 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+        
 }
 .product {
-    max-width: 100%;
+    width: 90%;
     background-color:#ffc;
     margin: 0.3em;
    
@@ -415,7 +430,7 @@ a {
 }
 .seeMore{
     position: absolute;
-    display:block;
+    
     right:5px;
     bottom:5px;
 }
@@ -440,27 +455,20 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+
  
   
 }
-#employees {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-}
+
 /*Kontakt ****************/
 
 #kontakt {
-    margin: 1em auto 0.2em;
+    margin: 1em 1em 0.2em;
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
     background-color: #ffc;
-    width: 60%;
+    width: 90%;
     
 }
 
@@ -500,7 +508,7 @@ a {
 #cjenik {
    width: 90%;
     background-color: #ffc;
-    margin: 0 auto;
+    margin: 1em;
    
 }
 #cjenik dt,
@@ -516,6 +524,20 @@ a {
 }
 .category {
     font-weight: bold;
+}
+#cjenik a {
+    color: #022;
+}
+#cjenik a:visited {
+    color: #666;
+}
+
+#cjenik a:hover,
+#cjenik a:focus {
+    text-decoration:underline;
+}
+#cjenik a:active{
+    color: #066;
 }
 
 /*Media queries ***/
@@ -657,6 +679,18 @@ a {
             -ms-flex-flow: column;
                 flex-flow: column;
     }
+    .employee {
+        max-width: 100%;
+    }
+    .product img {
+        height: 180px;
+    }
+    .product> div {
+        height: 180px;
+    }
+    .product p {
+        height: 75%;
+    }
 }
 @media screen and (max-width:400px){
     #pageHeader {
@@ -704,4 +738,5 @@ a {
         width:95%;
         margin: 5px 10px;
     }
+    
 }
