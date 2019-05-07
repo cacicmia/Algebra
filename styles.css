@@ -570,6 +570,20 @@ a {
     }
     .navMenu {
         display:none;
+
+    }
+    #menuOptions {
+        position: absolute;
+        width: 100%;
+    }
+    #menuOptions a{
+        display:block;
+        background-color: #066;
+       
+        padding: 1em;
+        text-align: center;
+       
+
     }
   
     #menuIcon {
