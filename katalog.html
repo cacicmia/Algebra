@@ -47,50 +47,52 @@
 	<div class="content">
 			<main id="mainContent">
 					<article class="post german" id="german">
-						<h1><a href="#">Njemački A1 </a></h1>
+						<h1><a href="./cjenik.html#ger">Njemački A1 </a></h1>
 						<p>Pellentesque laoreet orci lectus, eget porta nunc laoreet facilisis. Proin sollicitudin ipsum nulla, efficitur finibus metus fringilla vel. Vivamus non ante dolor. </p>
 					</article>
 					<article class="post english" id="english">
-						<h1><a href="#">Engleski B1</a></h1>
+						<h1><a href="./cjenik.html#eng">Engleski B1</a></h1>
 						<p>Pellentesque laoreet orci lectus, eget porta nunc laoreet facilisis. Proin sollicitudin ipsum nulla, efficitur finibus metus fringilla vel. Vivamus non ante dolor. </p>
 					</article>
-					<article class="post" id="theme">
-						<h1><a href="#">Tematski izleti</a></h1>
+					<article class="post izl" id="theme">
+						<h1><a href="./cjenik.html#izl">Tematski izleti</a></h1>
 						<p>Pellentesque laoreet orci lectus, eget porta nunc laoreet facilisis. Proin sollicitudin ipsum nulla, efficitur finibus metus fringilla vel. Vivamus non ante dolor. </p>
 					</article>
 					<article class="post spanish" id="spanish">
-						<h1><a href="#">Španjolski B2</a></h1>
+						<h1><a href="./cjenik.html#sp">Španjolski B2</a></h1>
 						<p>Pellentesque laoreet orci lectus, eget porta nunc laoreet facilisis. Proin sollicitudin ipsum nulla, efficitur finibus metus fringilla vel. Vivamus non ante dolor. </p>
 					</article>
 					<article class="post italian" id="italian">
-						<h1><a href="#">Talijanski A2</a></h1>
+						<h1><a href="./cjenik.html#it">Talijanski A2</a></h1>
 						<p>Pellentesque laoreet orci lectus, eget porta nunc laoreet facilisis. Proin sollicitudin ipsum nulla, efficitur finibus metus fringilla vel. Vivamus non ante dolor.  </p>
 					</article>
-					<article class="post" id="intenzivne">
-						<h1><a href="#">Intenzivne radionice</a></h1>
+					<article class="post int" id="intenzivne">
+						<h1><a href="./cjenik.html#int">Intenzivne radionice</a></h1>
 						<p>Pellentesque laoreet orci lectus, eget porta nunc laoreet facilisis. Proin sollicitudin ipsum nulla, efficitur finibus metus fringilla vel. Vivamus non ante dolor. </p>
 					</article>
 				</main>
 		<aside id="sidebar">
-			<div class="links">
-				<h2>Izdvojeno</h2>
-				<li><a href="./proizvodi-usluge.html#radionice">Radionice</a>
-				</li>
-				<li><a href="./proizvodi-usluge.html#teme">Izleti</a>
-				</li>
-				<li><a href="#english">Engleski jezik</a>
-				</li>
-				<li><a href="#german">Njemački jezik</a>
-				</li>
-				<li><a href="#spanish">Španjolski jezik</a>
-				</li>
-				<li><a href="#italian">Talijanski jezik</a>
-				</li>
-				<li><a href="./index.html">O nama</a>
-				</li>
-				<li><a href="./kontakt.html#mainContent">Vaš upit</a>
-				</li>
-			</div>
+				<div class="links">
+						<h2>Izdvojeno</h2>
+						<ul>
+						<li><a href="./proizvodi-usluge.html#radionice">Radionice</a>
+						</li>
+						<li><a href="./proizvodi-usluge.html#teme">Izleti</a>
+						</li>
+						<li><a href="./katalog.html#english">Engleski jezik</a>
+						</li>
+						<li><a href="./katalog.html#german">Njemački jezik</a>
+						</li>
+						<li><a href="./katalog.html#spanish">Španjolski jezik</a>
+						</li>
+						<li><a href="./katalog.html#italian">Talijanski jezik</a>
+						</li>
+						<li><a href="./index.html">O nama</a>
+						</li>
+						<li><a href="./kontakt.html#mainContent">Vaš upit</a>
+						</li>
+					</ul>
+					</div>
 			<div class="team">
 				<h2>Naš tim</h2>
 				<div id="teamDiv">
@@ -147,6 +149,10 @@
         $('#menuIcon').click(function(){
             $('.navMenu').slideToggle();
         });
+		$(".post").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
  });
 </script>
 </body>
